@@ -9,7 +9,7 @@ async function listMacros(macros) {
     if (macros.length === 0) {
         // fires when user don't have macros
 
-        macrosList.innerHTML = "<p>Você não tem macros.</p>";
+        macrosList.innerHTML = "<p>You don't have macros.</p>";
         return;
     }
 
