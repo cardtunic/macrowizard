@@ -12,7 +12,7 @@
 
 <h2 id="whatis">🤔 What is?</h2> 
 
-<p>macrowizard is an application that helps you create macros for a program called [LuaMacros](https://github.com/me2d13/luamacros), without you having to programing, simplifying the whole process.</p>
+macrowizard is an application that helps you create macros for a program called [LuaMacros](https://github.com/me2d13/luamacros), without you having to programing, simplifying the whole process.
 
 <a target="_blank" href="https://cardtunic.github.io/macrowizard/">
     <img src="https://i.imgur.com/P2P6drn.png"/>
