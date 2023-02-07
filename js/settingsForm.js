@@ -7,7 +7,7 @@ const cancelSettingsBtn = document.querySelector("#cancel-settings");
 const keyboardHid = document.querySelector("#keyboard-hid-input");
 
 const uploadArea = document.querySelector("#upload-area");
-const uploadSettingsInput = document.querySelector("#upload-config-input")
+const uploadSettingsInput = document.querySelector("#upload-config-input");
 
 keyboardHid.value = getKeyboardHid();
 
@@ -18,30 +18,37 @@ exportSettingsBtn.addEventListener("click", () => {
 importSettingsBtn.addEventListener("click", () => {
     const currentDisplayValueUploadArea = uploadArea.style.display;
 
-    if (currentDisplayValueUploadArea === "none" || currentDisplayValueUploadArea === "") {
+    if (
+        currentDisplayValueUploadArea === "none" ||
+        currentDisplayValueUploadArea === ""
+    ) {
         uploadArea.style.display = "flex";
         importSettingsBtn.focus();
-
     } else {
         uploadArea.style.display = "none";
         importSettingsBtn.blur();
     }
-
 });
 
 saveSettingsBtn.addEventListener("click", async () => {
-    const file = uploadSettingsInput.files[0]
+    const file = uploadSettingsInput.files[0];
 
     if (file !== undefined) {
         importUserSettings(file);
     }
 
-    localStorage.setItem("hid", keyboardHid.value)
-    alert("✅ Saved settings")
+    localStorage.setItem("hid", keyboardHid.value);
+    alert("✅ Saved settings");
 
-    location.pathname = "./dashboard.html"
-})
+    location.pathname = location.pathname.replace(
+        "settings.html",
+        "dashboard.html"
+    );
+});
 
 cancelSettingsBtn.addEventListener("click", () => {
-    location.pathname = "./dashboard.html"
-})
+    location.pathname = location.pathname.replace(
+        "settings.html",
+        "dashboard.html"
+    );
+});
