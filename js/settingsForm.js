@@ -40,15 +40,19 @@ saveSettingsBtn.addEventListener("click", async () => {
     localStorage.setItem("hid", keyboardHid.value);
     alert("✅ Saved settings");
 
-    location.pathname = location.pathname.replace(
-        "settings.html",
-        "dashboard.html"
-    );
+    if (location.origin.includes("cardtunic.github.io")) {
+        location.pathname = "/macrowizard/settings.html"
+    
+    } else {
+        location.pathname = "/dashboard.html"
+    }
 });
 
 cancelSettingsBtn.addEventListener("click", () => {
-    location.pathname = location.pathname.replace(
-        "settings.html",
-        "dashboard.html"
-    );
+    if (location.origin.includes("cardtunic.github.io")) {
+        location.pathname = "/macrowizard/settings.html"
+    
+    } else {
+        location.pathname = "/dashboard.html"
+    }
 });
