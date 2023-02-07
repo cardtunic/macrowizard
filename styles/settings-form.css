@@ -1,0 +1,124 @@
+#settings-wrapper {
+    height: auto;
+    width: 35vw;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    gap: 50px;
+}
+
+#settings-wrapper h2 {
+    height: 30px;
+    font-size: 26px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 10px;
+}
+
+#settings-wrapper form {
+    display: flex;
+    flex-direction: column;
+
+    gap: 35px;
+}
+
+#settings-wrapper form label {
+    font-size: 20px;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 20px;
+}
+
+#settings-wrapper form label .buttons {
+    height: auto;
+    width: 80%;
+
+    display: flex;
+    flex-direction: row;
+
+    gap: 10px;
+}
+
+#settings-wrapper form label .buttons button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 15px;
+
+    text-align: center;
+
+    border: 3px solid var(--white);
+    background-color: transparent;
+}
+
+#settings-wrapper form label .buttons button:hover {
+    opacity: 0.7;
+}
+
+#settings-wrapper form label input {
+    outline: none;
+
+    height: 60px;
+    width: 100%;
+
+    border: 3px solid var(--white);
+    background-color: transparent;
+
+    border-radius: 15px;
+    text-align: center;
+
+    font-size: 20px;
+}
+
+#settings-wrapper form label input::placeholder {
+    font-weight: 500;
+    color: var(--white);
+}
+
+#settings-wrapper .buttons {
+    display: flex;
+    height: auto;
+
+    justify-content: space-between;
+
+    flex-direction: row;
+    gap: 10px;
+}
+
+#settings-wrapper .buttons button {
+    width: 100%;
+    height: 60px;
+}
+
+#upload-area {
+    height: 100%;
+    width: 30vw;
+
+    display: none;
+
+    justify-content: center;
+    align-items: center;
+
+    flex-direction: column;
+
+    border-radius: 15px;
+
+    border: 3px dashed var(--white);
+
+    transition: all 100ms ease-in;
+}
+
+#upload-area .material-symbols-outlined {
+    font-size: 100px;
+}
+
+#upload-area p {
+    font-size: 18px;
+}

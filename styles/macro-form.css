@@ -1,0 +1,149 @@
+#macro-form-wrapper {
+    width: 35vw;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+
+    gap: 20px;
+
+    flex-direction: column;
+}
+
+#macro-form-wrapper form {
+    width: 100%;
+    /* height: auto; */
+    
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    
+    gap: 40px;
+
+    flex-direction: column;
+}
+
+#macro-form-wrapper form h2 {
+    height: 30px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-direction: row;
+    gap: 15px;
+
+    font-size: 26px;
+    font-weight: 500;
+}
+
+#macro-form-wrapper form h2 span {
+    font-size: 20px;
+}
+
+#macro-form-wrapper form fieldset {
+    width: 100%;
+    height: 100px;
+
+    display: flex;
+    justify-content: space-between;
+
+    flex-direction: column;
+
+    padding: 0;
+
+    border: none;
+}
+
+#macro-form-wrapper form fieldset legend {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+#macro-form-wrapper form fieldset div {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: space-between;
+
+    gap: 10px;
+
+    flex-direction: row;
+}
+
+#macro-form-wrapper form fieldset div label {
+    cursor: pointer;
+
+    height: 60px;
+    width: 60px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 15px;
+
+    color: var(--ligth-blue);
+    background-color: var(--gray-blue);
+
+    font-size: 20px;
+    font-weight: 500;
+
+    transition: all 100ms ease-in;
+
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+}
+
+#macro-form-wrapper form fieldset div label:has(> input:checked) {
+    color: var(--blue);
+    background-color: var(--ligth-blue);
+}
+
+#macro-form-wrapper form fieldset div label span {
+    color: var(--ligth-blue);
+    font-size: 24px;
+}
+
+#macro-form-wrapper form fieldset div label:has(> input:checked) span {
+    color: var(--blue);
+}
+
+#macro-form-wrapper form fieldset div label:hover {
+    opacity: 0.7;
+}
+
+#macro-form-wrapper form fieldset div label input {
+    position: relative;
+    top: 0;
+    left: 0;
+
+    width: 0%;
+    height: 0%;
+
+    appearance: none;
+    border: none;
+    background-color: transparent;
+}
+
+#macro-form-wrapper form fieldset div .user-key-input {
+    flex-grow: 1;
+    height: 60px;
+    background-color: var(--dark-blue);
+}
+
+#macro-form-wrapper .buttons {
+    height: 60px;
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+}
+
+#macro-form-wrapper button {
+    width: 100%;
+    height: 100%;
+}

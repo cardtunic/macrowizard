@@ -1,0 +1,12 @@
+body {
+    gap: 60px;
+}
+
+main {
+    width: 100%;
+    height: calc(100% - 120px);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

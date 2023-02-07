@@ -1,0 +1,111 @@
+#my-macros-wrapper {
+    height: 100%;
+    width: 35vw;
+
+    display: flex;
+    justify-content: center;
+
+    flex-direction: column;
+
+    gap: 40px;
+}
+
+#my-macros-wrapper h2 {
+    height: 30px;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+
+    flex-shrink: 0;
+
+    gap: 15px;
+
+    font-size: 26px;
+    font-weight: 500;
+}
+
+#my-macros-wrapper h2 span {
+    font-size: 20px;
+}
+
+#my-macros-wrapper #macros-list {
+    width: 100%;
+    height: auto;
+
+    display: flex;
+    align-items: flex-start;
+
+    flex-direction: column;
+
+    gap: 20px;
+
+    overflow-y: auto;
+}
+
+
+#my-macros-wrapper #macros-list .macro {
+    width: 100%;
+    height: auto;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    flex-shrink: 0;
+
+    padding: 20px;
+
+    border-radius: 15px;
+
+    background-color: var(--gray-blue);
+}
+
+#my-macros-wrapper #macros-list .macro .macro-keys {
+    display: flex;
+    flex-direction: row;
+
+    gap: 10px;
+}
+
+#my-macros-wrapper #macros-list .macro .macro-keys div {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 5px;
+}
+
+#my-macros-wrapper #macros-list .macro .macro-keys div p {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+#my-macros-wrapper #macros-list .macro .macro-keys div p span {
+    font-size: 16px;
+    color: var(--ligth-blue);
+}
+
+#my-macros-wrapper #macros-list .macro .material-symbols-outlined {
+    cursor: pointer;
+
+    text-decoration: none;
+
+    color: var(--ligth-blue);
+
+    font-size: 30px;
+
+    transition: all 100ms ease-in;
+}
+
+#my-macros-wrapper #macros-list .macro .material-symbols-outlined:hover {
+    opacity: 0.7;
+}
+
+#my-macros-wrapper .primary-btn {
+    flex-shrink: 0;
+
+    height: 60px;
+    width: 100%;
+}

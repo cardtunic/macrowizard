@@ -1,0 +1,126 @@
+body {
+    gap: 60px;
+    padding: 120px;
+}
+
+main {
+    width: 100%;
+    height: calc(100% - 120px);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#text-wrapper {
+    width: 40vw;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+
+    gap: 60px;
+    
+    flex-direction: column;
+}
+
+#text-wrapper div {
+    display: flex;
+    flex-direction: column;
+
+    gap: 20px;
+}
+
+#text-wrapper div h1 {
+    font-size: 48px;
+    font-weight: 600;
+}
+
+#text-wrapper div h1 span {
+    color: var(--ligth-blue);
+}
+
+#text-wrapper div {
+    font-size: 20px;
+}
+
+#text-wrapper div hr {
+    border-color: var(--ligth-blue);
+}
+
+#text-wrapper div #keyboard-hid {
+    width: 100%;
+    height: 60px;
+    
+    display: flex;
+    flex-direction: row;
+
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 20px;
+}
+
+#text-wrapper div #keyboard-hid form {
+    display: flex;
+    flex-direction: row;
+
+    width: 100%;
+
+    align-items: center;
+}
+
+#text-wrapper div #keyboard-hid form input {
+    outline: none;
+
+    height: 60px;
+    width: 100%;
+
+    text-align: center;
+
+    background-color: transparent;
+
+    border-radius: 15px 0px 0px 15px;
+    border: 3px var(--white) solid;
+    border-right: none;
+
+    font-size: 20px;
+}
+
+#text-wrapper div #keyboard-hid form input::placeholder {
+    color: var(--white);
+    font-weight: 500;
+}
+
+#text-wrapper div #keyboard-hid form button {
+    height: 60px;
+    width: 60px;
+
+    color: var(--blue);
+    background-color: var(--white);
+
+    border-radius: 0px 15px 15px 0px;
+
+    font-size: 25px;
+}
+
+#text-wrapper div #keyboard-hid form button:hover {
+    opacity: 0.7;
+}
+
+#text-wrapper div #keyboard-hid span.material-symbols-outlined {
+    cursor: pointer;
+
+    font-size: 40px;
+    color: var(--ligth-blue);
+
+    transition: all 100ms ease-in;
+}
+
+#text-wrapper div #keyboard-hid span.material-symbols-outlined:hover {
+    opacity: 0.7;
+}
+
+main img {
+    width: 25vw;
+}

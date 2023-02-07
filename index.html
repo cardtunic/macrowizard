@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+        />
+
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap"
+            rel="stylesheet"
+        />
+
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="./assets/favicon/apple-touch-icon.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./assets/favicon/favicon-32x32.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="./assets/favicon/favicon-16x16.png"
+        />
+        <link rel="manifest" href="./assets/favicon/site.webmanifest" />
+        <link
+            rel="mask-icon"
+            href="./assets/favicon/safari-pinned-tab.svg"
+            color="#5bbad5"
+        />
+        <link rel="shortcut icon" href="./assets/favicon/favicon.ico" />
+        <meta name="msapplication-TileColor" content="#da532c" />
+        <meta
+            name="msapplication-config"
+            content="./assets/favicon/browserconfig.xml"
+        />
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="./styles/macro-form.css" />
+        <link rel="stylesheet" href="./styles/my-macros.css" />
+        <link rel="stylesheet" href="./styles/home.css" />
+
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>macrowizard_</title>
+    </head>
+    <body>
+        <header>
+            <img src="./assets/images/logo.svg" alt="Logo of macrowizard_" />
+        </header>
+
+        <main>
+            <div id="text-wrapper">
+                <div>
+                    <h1><span>Welcome,</span></h1>
+
+                    <p>
+                        Here you can create macros for LuaMacros without having
+                        to worry about programming in Lua. You create your
+                        macros in an easy way and we do everything else :)
+                    </p>
+                </div>
+
+                <div>
+                    <hr class="solid" />
+
+                    <p style="color: var(--ligth-blue)">
+                        Before we start, we need to identify which keyboard you
+                        want to map, so enter its HID below:
+                    </p>
+
+                    <div id="keyboard-hid">
+                        <form action="./dashboard.html" method="get">
+                            <input
+                                name="keyboard-hid-input"
+                                id="keyboard-hid-input"
+                                type="text"
+                                value=""
+                                placeholder="Enter your keyboard's HID"
+                                required
+                            />
+
+                            <button
+                                type="submit"
+                                class="material-symbols-outlined"
+                            >
+                                arrow_forward_ios
+                            </button>
+                        </form>
+
+                        <!-- <span class="material-symbols-outlined">help</span> -->
+                    </div>
+                </div>
+            </div>
+
+            <img src="./assets/icons/magic.svg" alt="Blue magic wand" />
+        </main>
+
+        <script src="./js/hidKeyboard.js"></script>
+
+        <script>
+            if (localStorage.getItem("hid") !== null) {
+                location.pathname = "/dashboard.html"
+            }
+        </script>
+    </body>
+</html>
