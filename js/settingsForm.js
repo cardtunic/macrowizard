@@ -41,7 +41,7 @@ saveSettingsBtn.addEventListener("click", async () => {
     alert("✅ Saved settings");
 
     if (location.origin.includes("cardtunic.github.io")) {
-        location.pathname = "/macrowizard/settings.html"
+        location.pathname = "/macrowizard/dashboard.html"
     
     } else {
         location.pathname = "/dashboard.html"
@@ -50,7 +50,7 @@ saveSettingsBtn.addEventListener("click", async () => {
 
 cancelSettingsBtn.addEventListener("click", () => {
     if (location.origin.includes("cardtunic.github.io")) {
-        location.pathname = "/macrowizard/settings.html"
+        location.pathname = "/macrowizard/dashboard.html"
     
     } else {
         location.pathname = "/dashboard.html"
