@@ -10,7 +10,7 @@
  <a href="#licence">License</a>
 </p>
 
-<h2 id="whatis">🤔 What is?</h2> 
+<h2 id="whatis">🤔 What is it?</h2> 
 
 macrowizard is an application that helps you create macros for a program called [LuaMacros](https://github.com/me2d13/luamacros), without you having to programing, simplifying the whole process.
 
